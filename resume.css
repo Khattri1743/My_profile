@@ -1,0 +1,81 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Main Container */
+.cover-letter-container {
+    background: #ffffff;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Photo Section */
+.photo-section {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.photo-section img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #003366;
+}
+
+/* Letter Content */
+.letter-content {
+    text-align: justify;
+}
+
+.letter-content p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #333;
+}
+
+.greeting, .sign-off {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.greeting strong, .sign-off strong {
+    color: #003366;
+}
+
+/* Highlighting Important Parts */
+strong {
+    font-weight: bold;
+    color: #003366;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .cover-letter-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .photo-section img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .letter-content p {
+        font-size: 14px;
+    }
+}
